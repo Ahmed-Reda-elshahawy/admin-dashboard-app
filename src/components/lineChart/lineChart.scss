@@ -1,0 +1,62 @@
+@import '../../Style/variable.scss';
+
+.lineChart {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    .public-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 2;
+
+        .title-info {
+            font-size: 12px;
+            gap: 5px;
+        }
+
+        span:nth-child(2) {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .view-link {
+            font-size: 14px;
+        }
+
+        .title-info {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .chart-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+
+        .chart {
+            width: 100%;
+            height: 100%;
+        }
+
+        .percentage {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            gap: 5px;
+
+            span:nth-child(1) {
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            span:nth-child(2) {
+                font-size: 12px;
+                color: $soft-color;
+            }
+        }
+    }
+}

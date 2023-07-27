@@ -1,0 +1,45 @@
+@import '../../Style/variable.scss';
+
+.topDeals {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .user-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .user-info {
+                display: flex;
+                flex-direction: column;
+
+                .username {
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+
+                .email {
+                    font-size: 12px;
+                    font-weight: 200px;
+                }
+            }
+        }
+
+        .money {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../Style/variable.scss';
+
+.new-user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 137px);
+    background-color: rgba(0, 0, 0, 0.744);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .model {
+        max-width: 500px;
+        background-color: $main-bg;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        .close {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            background-color: rgb(163, 0, 0);
+            border-radius: 20%;
+            padding: 5px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                input {
+                    padding: 7px;
+                    border-radius: 5px;
+                    outline: none;
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}

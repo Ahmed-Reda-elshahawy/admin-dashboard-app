@@ -1,0 +1,32 @@
+.products {
+
+    .users-info {
+        margin-bottom: 30px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .view {
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .delete {
+        cursor: pointer;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

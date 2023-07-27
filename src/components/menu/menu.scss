@@ -1,0 +1,36 @@
+@import '../../Style/variable.scss';
+@import '../../Style/responsive.scss';
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .item-title {
+        font-size: 15px;
+        color: $soft-color;
+        font-weight: 200;
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 5px;
+
+        span {
+            @include lg {
+                display: none;
+            }
+        }
+
+        &:hover {
+            background-color: $soft-bg;
+        }
+    }
+}
